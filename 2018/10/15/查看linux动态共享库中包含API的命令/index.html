@@ -79,19 +79,19 @@
 
 
 
-<meta name="description" content="本文主要用于记录查看linux动态共享库中API的命令   nm -D lib_name.so  使用T做前缀标识的为导出API   objdump -tT lib_name.so  Base字段表示的为导出API     以上">
+<meta name="description" content="本文主要用于记录查看linux动态共享库中API的命令   nm -D lib_name.so  使用T做前缀标识的为导出API   objdump -tT lib_name.so  Base字段表示的为导出API     查看静态库中API的命令   nm -g --defined-only libxxx.a   以上">
 <meta property="og:type" content="article">
 <meta property="og:title" content="查看linux动态共享库中包含API的命令">
 <meta property="og:url" content="https://chenzunyin.github.io/2018/10/15/查看linux动态共享库中包含API的命令/index.html">
 <meta property="og:site_name" content="X Space">
-<meta property="og:description" content="本文主要用于记录查看linux动态共享库中API的命令   nm -D lib_name.so  使用T做前缀标识的为导出API   objdump -tT lib_name.so  Base字段表示的为导出API     以上">
+<meta property="og:description" content="本文主要用于记录查看linux动态共享库中API的命令   nm -D lib_name.so  使用T做前缀标识的为导出API   objdump -tT lib_name.so  Base字段表示的为导出API     查看静态库中API的命令   nm -g --defined-only libxxx.a   以上">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://p5l5fsh44.bkt.clouddn.com/nm%E5%AF%BC%E5%87%BAAPI.png">
 <meta property="og:image" content="http://p5l5fsh44.bkt.clouddn.com/objdump%E5%AF%BC%E5%87%BAAPI.png">
-<meta property="og:updated_time" content="2018-10-15T07:09:09.426Z">
+<meta property="og:updated_time" content="2018-10-30T07:30:03.357Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="查看linux动态共享库中包含API的命令">
-<meta name="twitter:description" content="本文主要用于记录查看linux动态共享库中API的命令   nm -D lib_name.so  使用T做前缀标识的为导出API   objdump -tT lib_name.so  Base字段表示的为导出API     以上">
+<meta name="twitter:description" content="本文主要用于记录查看linux动态共享库中API的命令   nm -D lib_name.so  使用T做前缀标识的为导出API   objdump -tT lib_name.so  Base字段表示的为导出API     查看静态库中API的命令   nm -g --defined-only libxxx.a   以上">
 <meta name="twitter:image" content="http://p5l5fsh44.bkt.clouddn.com/nm%E5%AF%BC%E5%87%BAAPI.png">
 
 
@@ -395,6 +395,12 @@
 <li><strong>Base</strong>字段表示的为导出API<br><img src="http://p5l5fsh44.bkt.clouddn.com/objdump%E5%AF%BC%E5%87%BAAPI.png" alt="objdump"></li>
 </ul>
 </li>
+</ol>
+<blockquote>
+<p>查看静态库中API的命令</p>
+</blockquote>
+<ol>
+<li><code>nm -g --defined-only libxxx.a</code></li>
 </ol>
 <blockquote>
 <p>以上</p>
